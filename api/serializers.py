@@ -8,4 +8,4 @@ class ComplaintSerializer(serializers.HyperlinkedModelSerializer):
         fields = ('record_number', 'record_type', 'record_type_map', 'record_type_desc', 'description',
                   'open_date', 'last_inspected_date', 'last_inspected_result', 'status', 'original_address',
                   'original_city', 'original_state', 'original_zip', 'complaint_link', 'latitude',
-                  'longitude')
+                  'longitude', 'url')

@@ -21,3 +21,5 @@ Now run ```mkvirtualenv <name-your-env>```, and you should see the name of your 
 With your virtualenv active, navigate to the directory with requirements.txt and run ```pip install -r requirements.txt``` to install the listed packages. At any time, you can run ```pip freeze``` to see the packages you have installed in your current environment.
 
 The manage.py file allows you to run python commands within the context of your project. In the directory containing your manage.py file, run ```python manage.py migrate``` to synchronize your database, and then ```python manage.py createsuperuser``` to make yourself an account. You can run ```python manage.py runserver``` at any point to spin up a local version of your site.
+
+To run the CSV importer, use the command ```python manage.py csv_import --path=[PATH/TO/FILE]```. I've added a test CSV for convenience in the datasource app.
